@@ -1,5 +1,7 @@
 # Fwoosh
 
+[![Build](https://github.com/lunar-house/Fwoosh/actions/workflows/ios.yml/badge.svg)](https://github.com/lunar-house/Fwoosh/actions/workflows/ios.yml)
+
 A noise generator
 
 ## Developer setup

@@ -1,0 +1,28 @@
+{
+  "configurations" : [
+    {
+      "id" : "77B0F99E-E7A8-421D-A9B9-99B9D9C80F6F",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Fwoosh.xcodeproj",
+      "identifier" : "FEECF7662E4E6A4B00F1658D",
+      "name" : "Fwoosh"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Fwoosh.xcodeproj",
+        "identifier" : "FEECF7732E4E6A4E00F1658D",
+        "name" : "FwooshTests"
+      }
+    }
+  ],
+  "version" : 1
+}

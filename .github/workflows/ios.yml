@@ -24,7 +24,7 @@ jobs:
         run: sudo xcode-select -s /Applications/Xcode_16.4.app/Contents/Developer
 
       - name: Show current version of Xcode
-        run: xcodebuild -version -skipPackagePluginValidation -skipMacroValidation
+        run: xcodebuild -version
 
       - name: Run tests
         run: ./run_tests.sh

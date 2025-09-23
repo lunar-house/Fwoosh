@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4AFFB7452E8335DF004D370F /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4AFFB7442E8335DF004D370F /* AudioKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		FEECF7752E4E6A4E00F1658D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AFFB7452E8335DF004D370F /* AudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +63,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AFFB7432E8335DF004D370F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FEECF75E2E4E6A4B00F1658D = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +77,7 @@
 				FEF6BF802E56434B00A30AC6 /* Fwoosh.xctestplan */,
 				FEECF7692E4E6A4B00F1658D /* Fwoosh */,
 				FEECF7772E4E6A4E00F1658D /* FwooshTests */,
+				4AFFB7432E8335DF004D370F /* Frameworks */,
 				FEECF7682E4E6A4B00F1658D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,6 +113,7 @@
 			);
 			name = Fwoosh;
 			packageProductDependencies = (
+				4AFFB7442E8335DF004D370F /* AudioKit */,
 			);
 			productName = Fwoosh;
 			productReference = FEECF7672E4E6A4B00F1658D /* Fwoosh.app */;
@@ -501,6 +515,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FEF6BF812E56561E00A30AC6 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
 			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+		4AFFB7442E8335DF004D370F /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AFFB73E2E8326A0004D370F /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

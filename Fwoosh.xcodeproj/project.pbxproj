@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		4AFFB73D2E8323A0004D370F /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4AFFB73C2E8323A0004D370F /* AudioKit */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		FEECF7752E4E6A4E00F1658D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -49,7 +45,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AFFB73D2E8323A0004D370F /* AudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +100,6 @@
 			);
 			name = Fwoosh;
 			packageProductDependencies = (
-				4AFFB73C2E8323A0004D370F /* AudioKit */,
 			);
 			productName = Fwoosh;
 			productReference = FEECF7672E4E6A4B00F1658D /* Fwoosh.app */;
@@ -165,7 +159,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				FEF6BF812E56561E00A30AC6 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
-				4AFFB73B2E8323A0004D370F /* XCRemoteSwiftPackageReference "AudioKit" */,
+				4AFFB73E2E8326A0004D370F /* XCRemoteSwiftPackageReference "AudioKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FEECF7682E4E6A4B00F1658D /* Products */;
@@ -479,9 +473,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4AFFB73B2E8323A0004D370F /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+		4AFFB73E2E8326A0004D370F /* XCRemoteSwiftPackageReference "AudioKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:AudioKit/AudioKit.git";
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.6.5;
@@ -507,11 +501,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FEF6BF812E56561E00A30AC6 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */;
 			productName = "plugin:SwiftLintBuildToolPlugin";
-		};
-		4AFFB73C2E8323A0004D370F /* AudioKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4AFFB73B2E8323A0004D370F /* XCRemoteSwiftPackageReference "AudioKit" */;
-			productName = AudioKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

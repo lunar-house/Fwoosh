@@ -14,10 +14,12 @@ struct FwooshNode {
     init(engine: AudioEngine, mixer: Mixer) {
         self.engine = engine
         self.mixer = mixer
-        self.engine.output = mixer
+        self.engine.output = self.mixer
     }
-    func play() {
 
+    func play(noise: Node) {
+        self.mixer.addInput(noise)
+        noise.start()
     }
 
 }

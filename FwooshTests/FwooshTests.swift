@@ -6,30 +6,28 @@
 //
 
 import AudioKit
+import SoundpipeAudioKit
 import Testing
 
 @testable import Fwoosh
 
 struct FwooshTests {
-    
+
     var engine: AudioEngine
     var mixer: Mixer
-    var fwooshNode : FwooshNode
-    
+    var fwooshNode: FwooshNode
+
     init() {
         engine = AudioEngine()
         mixer = Mixer()
         fwooshNode = FwooshNode(engine: engine, mixer: mixer)
     }
-    
-    
+
     @Test func connectingEngineToMixer() {
         // var whitenoise = WhiteNoise()
         // Instantiate Fwoosh Noise Class
-        
 
         // FwooshNoise.play()
-        fwooshNode.play()
         // Noise is playing
         // Does fwoosh node have an engine?
         // Does engine have a mixer?
@@ -39,6 +37,15 @@ struct FwooshTests {
 
         //        #expect(engine.output?.isStarted == true)
 
+    }
+
+    @Test func playsNoise() {
+        let noise = BrownianNoise()
+
+        fwooshNode.play(noise: noise)
+
+        #expect(mixer.connections.contains(where: { $0 === noise }))
+        #expect(noise.isStarted == true)
     }
 
 }

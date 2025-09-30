@@ -11,14 +11,23 @@ import Testing
 @testable import Fwoosh
 
 struct FwooshTests {
-
+    
+    var engine: AudioEngine
+    var mixer: Mixer
+    var fwooshNode : FwooshNode
+    
+    init() {
+        engine = AudioEngine()
+        mixer = Mixer()
+        fwooshNode = FwooshNode(engine: engine, mixer: mixer)
+    }
+    
+    
     @Test func connectingEngineToMixer() {
         // var whitenoise = WhiteNoise()
         // Instantiate Fwoosh Noise Class
-        let engine = AudioEngine()
-        let mixer = Mixer()
+        
 
-        let fwooshNode = FwooshNode(engine: engine, mixer: mixer)
         // FwooshNoise.play()
         fwooshNode.play()
         // Noise is playing

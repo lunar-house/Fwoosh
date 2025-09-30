@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4AFFB7452E8335DF004D370F /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4AFFB7442E8335DF004D370F /* AudioKit */; };
+		FEA53A042E8C6FA600950D15 /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = FEA53A032E8C6FA600950D15 /* SoundpipeAudioKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEA53A042E8C6FA600950D15 /* SoundpipeAudioKit in Frameworks */,
 				4AFFB7452E8335DF004D370F /* AudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +116,7 @@
 			name = Fwoosh;
 			packageProductDependencies = (
 				4AFFB7442E8335DF004D370F /* AudioKit */,
+				FEA53A032E8C6FA600950D15 /* SoundpipeAudioKit */,
 			);
 			productName = Fwoosh;
 			productReference = FEECF7672E4E6A4B00F1658D /* Fwoosh.app */;
@@ -174,6 +177,7 @@
 			packageReferences = (
 				FEF6BF812E56561E00A30AC6 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
 				4AFFB73E2E8326A0004D370F /* XCRemoteSwiftPackageReference "AudioKit" */,
+				FEA53A022E8C6FA600950D15 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FEECF7682E4E6A4B00F1658D /* Products */;
@@ -495,6 +499,14 @@
 				minimumVersion = 5.6.5;
 			};
 		};
+		FEA53A022E8C6FA600950D15 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/SoundpipeAudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.3;
+			};
+		};
 		FEF6BF812E56561E00A30AC6 /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
@@ -520,6 +532,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4AFFB73E2E8326A0004D370F /* XCRemoteSwiftPackageReference "AudioKit" */;
 			productName = AudioKit;
+		};
+		FEA53A032E8C6FA600950D15 /* SoundpipeAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FEA53A022E8C6FA600950D15 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */;
+			productName = SoundpipeAudioKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

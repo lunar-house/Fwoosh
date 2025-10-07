@@ -49,8 +49,14 @@ struct FwooshTests {
         #expect(noise.isStarted == true)
     }
 
-    @Test(.disabled()) func stopNoise() {
+    @Test mutating func stopNoise() {
+        let noise = BrownianNoise()
+        fwooshNode.add(noise: noise)
+        fwooshNode.play()
 
+        fwooshNode.stop()
+
+        #expect(noise.isStarted == false)
     }
 
 }

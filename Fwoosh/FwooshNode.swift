@@ -29,6 +29,10 @@ struct FwooshNode {
         noise.start()
     }
 
+    mutating func stop() {
+        noise.stop()
+    }
+
 }
 
 class Silence: Node {

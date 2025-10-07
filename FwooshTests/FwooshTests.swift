@@ -39,13 +39,18 @@ struct FwooshTests {
 
     }
 
-    @Test func playsNoise() {
+    @Test mutating func playsNoise() {
         let noise = BrownianNoise()
+        fwooshNode.add(noise: noise)
 
-        fwooshNode.play(noise: noise)
+        fwooshNode.play()
 
         #expect(mixer.connections.contains(where: { $0 === noise }))
         #expect(noise.isStarted == true)
+    }
+
+    @Test(.disabled()) func stopNoise() {
+
     }
 
 }

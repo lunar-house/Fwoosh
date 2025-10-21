@@ -1,5 +1,5 @@
 {
-  "originHash" : "22ed30866501515c52cbf2a9b8cef9847eb792740929106796e12a99d59df892",
+  "originHash" : "580ab69ff2e488bfbec5435833b6f2d297f66aa184bd2291c55da5fb5cc2e5e1",
   "pins" : [
     {
       "identity" : "audiokit",
@@ -53,6 +53,15 @@
       "state" : {
         "revision" : "227c89ea047f928787bec571e487239547f21fe6",
         "version" : "2.1.0"
+      }
+    },
+    {
+      "identity" : "viewinspector",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nalexn/ViewInspector",
+      "state" : {
+        "revision" : "e9a06346499a3a889165647e3f23f8a7b2609a1c",
+        "version" : "0.10.3"
       }
     }
   ],

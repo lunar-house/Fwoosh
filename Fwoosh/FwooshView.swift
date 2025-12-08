@@ -13,7 +13,11 @@ struct FwooshView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button(
+                "Start",
+                action: {
+                    print("woo")
+                })
         }
         .padding()
     }

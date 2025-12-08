@@ -11,7 +11,7 @@ import Testing
 
 @testable import Fwoosh
 
-struct FwooshTests {
+struct FwooshNodeTests {
 
     var engine: AudioEngine
     var mixer: Mixer

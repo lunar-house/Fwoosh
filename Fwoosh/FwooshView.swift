@@ -6,8 +6,16 @@
 //
 
 import SwiftUI
+import AudioKit
+import SoundpipeAudioKit
 
 struct FwooshView: View {
+    @ObservedObject var fwooshNode: FwooshNode
+    
+    init (fwooshNode: FwooshNode) {
+        self.fwooshNode = fwooshNode
+    }
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -16,13 +24,11 @@ struct FwooshView: View {
             Button(
                 "Start",
                 action: {
-                    print("woo")
+                    fwooshNode.play()
                 })
         }
         .padding()
     }
 }
 
-#Preview {
-    FwooshView()
-}
+

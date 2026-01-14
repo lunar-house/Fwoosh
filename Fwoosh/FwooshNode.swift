@@ -9,7 +9,7 @@ import AVFAudio
 import AudioKit
 import Foundation
 
-struct FwooshNode {
+class FwooshNode: ObservableObject {
     var noise: Node = Silence()
     let engine: AudioEngine
     let mixer: Mixer
@@ -20,7 +20,7 @@ struct FwooshNode {
         self.engine.output = self.mixer
     }
 
-    mutating func add(noise: Node) {
+     func add(noise: Node) {
         self.noise = noise
         self.mixer.addInput(noise)
     }
@@ -29,7 +29,7 @@ struct FwooshNode {
         noise.start()
     }
 
-    mutating func stop() {
+     func stop() {
         noise.stop()
     }
 
